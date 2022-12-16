@@ -10,7 +10,7 @@ let passSign=document.getElementById("passwordd")
 
 
 
-// let local=JSON.parse(localStorage.getItem("users")) 
+let local=JSON.parse(localStorage.getItem("users")) 
 
 
   
@@ -25,7 +25,7 @@ function  loG(e) {
     
 let local=JSON.parse(localStorage.getItem("users")) 
 
-let exist =  JSON.parse(localStorage.getItem('users')).some(x =>
+let exist =  JSON.parse(localStorage.getItem("users")).some(x =>
     x.Email == emailٍSign.value && 
     x.Password ==  passSign.value
 
@@ -44,7 +44,7 @@ let exist =  JSON.parse(localStorage.getItem('users')).some(x =>
 
         }  else{
             console.log("pppppppppppppppppp")
-            // location.href = "../../";
+            location.href = "../../home.html";
            
         }
 
